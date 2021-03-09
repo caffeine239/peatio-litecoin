@@ -1,13 +1,13 @@
-# Peatio::Litecoin
+# Peatio::Muskcoin
 
-Peatio litecoin plugin for Rubykube stack
+Peatio muskcoin plugin for Rubykube stack
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'peatio-litecoin'
+gem 'peatio-muskcoin'
 ```
 
 And then execute:
@@ -16,36 +16,36 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install peatio-litecoin
+    $ gem install peatio-muskcoin
 
 ## Usage
 
-For Peatio Litecoin plugin integration you need to do the following steps:
+For Peatio Muskcoin plugin integration you need to do the following steps:
 
 ### Image Build.
 
-1. Add peatio-litecoin gem into your Gemfile.plugin
+1. Add peatio-muskcoin gem into your Gemfile.plugin
 ```ruby
-gem 'peatio-litecoin', '~> 0.2.0'
+gem 'peatio-muskcoin', '~> 0.2.0'
 ```
 
 2. Run `bundle install` for updating Gemfile.lock
 
-3. Build custom Peatio [docker image with Litecoin plugin](https://github.com/rubykube/peatio/blob/master/docs/plugins.md#build)
+3. Build custom Peatio [docker image with Muskcoin plugin](https://github.com/rubykube/peatio/blob/master/docs/plugins.md#build)
 
 4. Push your image using `docker push`
 
-5. Update your deployment to use image with peatio-litecoin gem
+5. Update your deployment to use image with peatio-muskcoin gem
 
 ### Peatio Configuration.
 
-1. Create Litecoin Blockchain [config example](../config/blockchains.yml).
+1. Create Muskcoin Blockchain [config example](../config/blockchains.yml).
     * No additional steps are needed
 
-2. Create Litecoin Currency [config example](../config/currencies.yml).
+2. Create Muskcoin Currency [config example](../config/currencies.yml).
     * No additional steps are needed
 
-3. Create Litecoin Wallets [config example](../config/wallets.yml)(deposit and hot wallets are required).
+3. Create Muskcoin Wallets [config example](../config/wallets.yml)(deposit and hot wallets are required).
     * No additional steps are needed
 
 
@@ -55,7 +55,7 @@ Plugin development [example](https://github.com/rubykube/peatio/blob/master/docs
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/rubykube/peatio-litecoin.
+Bug reports and pull requests are welcome on GitHub at https://github.com/rubykube/peatio-muskcoin.
 
 ## License
 

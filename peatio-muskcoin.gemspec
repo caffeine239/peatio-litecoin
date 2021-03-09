@@ -1,16 +1,16 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "peatio/litecoin/version"
+require "peatio/muskcoin/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "peatio-litecoin"
-  spec.version       = Peatio::Litecoin::VERSION
+  spec.name          = "peatio-muskcoin"
+  spec.version       = Peatio::Muskcoin::VERSION
   spec.authors       = ["Yaroslav S."]
   spec.email         = ["ysavchuk@heliostech.fr"]
 
-  spec.summary       = %q{Gem for extending Peatio plugable system with Litecoin implementation.}
-  spec.description   = %q{Litecoin Peatio gem which implements Peatio::Blockchain::Abstract & Peatio::Wallet::Abstract.}
+  spec.summary       = %q{Gem for extending Peatio plugable system with Muskcoin implementation.}
+  spec.description   = %q{Muskcoin Peatio gem which implements Peatio::Blockchain::Abstract & Peatio::Wallet::Abstract.}
   spec.homepage      = "https://openware.com/"
   spec.license       = "MIT"
 

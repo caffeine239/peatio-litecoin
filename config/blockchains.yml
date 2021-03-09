@@ -1,8 +1,8 @@
-- key:               ltc-testnet
-  name:              Litecoin Testnet
-  client:            litecoin                             # API client name.
-  server:            http://user:password@127.0.0.1:18332 # Public Litecoin node endpoint.
-  height:            1087160                               # Initial block number from which sync will be started.
+- key:               tsla-testnet
+  name:              Muskcoin Testnet
+  client:            muskcoin                             # API client name.
+  server:            http://user:password@127.0.0.1:2332 # Public Muskcoin node endpoint.
+  height:            4768                                # Initial block number from which sync will be started.
   min_confirmations: 6                                    # Minimal confirmations needed for withdraw and deposit confirmation.
   explorer:
     address:         https://chain.so/address/LTCTEST/#{address}

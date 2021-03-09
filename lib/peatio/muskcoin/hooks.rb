@@ -1,5 +1,5 @@
 module Peatio
-  module Litecoin
+  module Muskcoin
     module Hooks
       BLOCKCHAIN_VERSION_REQUIREMENT = "~> 1.0.0"
       WALLET_VERSION_REQUIREMENT = "~> 1.0.0"
@@ -9,8 +9,8 @@ module Peatio
           unless Gem::Requirement.new(BLOCKCHAIN_VERSION_REQUIREMENT)
                                  .satisfied_by?(Gem::Version.new(Peatio::Blockchain::VERSION))
             [
-              "Litecoin blockchain version requiremnt was not suttisfied by Peatio::Blockchain.",
-              "Litecoin blockchain requires #{BLOCKCHAIN_VERSION_REQUIREMENT}.",
+              "Muskcoin blockchain version requiremnt was not suttisfied by Peatio::Blockchain.",
+              "Muskcoin blockchain requires #{BLOCKCHAIN_VERSION_REQUIREMENT}.",
               "Peatio::Blockchain version is #{Peatio::Blockchain::VERSION}"
             ].join('\n').tap { |s| Kernel.abort s }
           end
@@ -18,21 +18,21 @@ module Peatio
           unless Gem::Requirement.new(WALLET_VERSION_REQUIREMENT)
                                  .satisfied_by?(Gem::Version.new(Peatio::Wallet::VERSION))
             [
-              "Litecoin wallet version requiremnt was not suttisfied by Peatio::Wallet.",
-              "Litecoin wallet requires #{WALLET_VERSION_REQUIREMENT}.",
+              "Muskcoin wallet version requiremnt was not suttisfied by Peatio::Wallet.",
+              "Muskcoin wallet requires #{WALLET_VERSION_REQUIREMENT}.",
               "Peatio::Wallet version is #{Peatio::Wallet::VERSION}"
             ].join('\n').tap { |s| Kernel.abort s }
           end
         end
 
         def register
-          Peatio::Blockchain.registry[:litecoin] = Litecoin::Blockchain.new
-          Peatio::Wallet.registry[:litecoind] = Litecoin::Wallet.new
+          Peatio::Blockchain.registry[:muskcoin] = Muskcoin::Blockchain.new
+          Peatio::Wallet.registry[:muskcoind] = Muskcoin::Wallet.new
         end
       end
 
       if defined?(Rails::Railtie)
-        require "peatio/litecoin/railtie"
+        require "peatio/muskcoin/railtie"
       else
         check_compatibility
         register

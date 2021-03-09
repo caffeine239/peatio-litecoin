@@ -1,6 +1,6 @@
-- id:                     ltc
-  name:                   Litecoin
-  blockchain_key:         ltc-testnet
+- id:                     tsla
+  name:                   Muskcoin
+  blockchain_key:         tsla-testnet
   symbol:                 'Ł'
   type:                   coin
   precision:              8

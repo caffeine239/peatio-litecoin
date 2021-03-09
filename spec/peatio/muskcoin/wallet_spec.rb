@@ -1,5 +1,5 @@
-RSpec.describe Peatio::Litecoin::Wallet do
-  let(:wallet) { Peatio::Litecoin::Wallet.new }
+RSpec.describe Peatio::Muskcoin::Wallet do
+  let(:wallet) { Peatio::Muskcoin::Wallet.new }
 
   let(:uri) { 'http://user:password@127.0.0.1:19332' }
   let(:uri_without_authority) { 'http://127.0.0.1:19332' }
@@ -8,7 +8,7 @@ RSpec.describe Peatio::Litecoin::Wallet do
     {
       wallet: { address: 'something',
                 uri:     uri },
-      currency: { id: :ltc,
+      currency: { id: :tsla,
                   base_factor: 100_000_000,
                   options: {} }
     }
@@ -17,7 +17,7 @@ RSpec.describe Peatio::Litecoin::Wallet do
   before { wallet.configure(settings) }
 
   context :configure do
-    let(:unconfigured_wallet) { Peatio::Litecoin::Wallet.new }
+    let(:unconfigured_wallet) { Peatio::Muskcoin::Wallet.new }
 
     it 'requires wallet' do
       expect{ unconfigured_wallet.configure(settings.except(:wallet)) }.to raise_error(Peatio::Wallet::MissingSettingError)
@@ -33,7 +33,7 @@ RSpec.describe Peatio::Litecoin::Wallet do
 
     it 'sets settings attribute' do
       unconfigured_wallet.configure(settings)
-      expect(unconfigured_wallet.settings).to eq(settings.slice(*Peatio::Litecoin::Wallet::SUPPORTED_SETTINGS))
+      expect(unconfigured_wallet.settings).to eq(settings.slice(*Peatio::Muskcoin::Wallet::SUPPORTED_SETTINGS))
     end
   end
 

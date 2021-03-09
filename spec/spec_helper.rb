@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "peatio/litecoin"
+require "peatio/muskcoin"
 require "pry-byebug"
 require "webmock/rspec"
 require "mocha"
