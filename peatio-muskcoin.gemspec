@@ -6,8 +6,8 @@ require "peatio/muskcoin/version"
 Gem::Specification.new do |spec|
   spec.name          = "peatio-muskcoin"
   spec.version       = Peatio::Muskcoin::VERSION
-  spec.authors       = ["Yaroslav S."]
-  spec.email         = ["ysavchuk@heliostech.fr"]
+  spec.authors       = ["Alyakam"]
+  spec.email         = [""]
 
   spec.summary       = %q{Gem for extending Peatio plugable system with Muskcoin implementation.}
   spec.description   = %q{Muskcoin Peatio gem which implements Peatio::Blockchain::Abstract & Peatio::Wallet::Abstract.}

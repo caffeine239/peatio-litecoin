@@ -1,8 +1,8 @@
 RSpec.describe Peatio::Muskcoin::Wallet do
   let(:wallet) { Peatio::Muskcoin::Wallet.new }
 
-  let(:uri) { 'http://user:password@127.0.0.1:19332' }
-  let(:uri_without_authority) { 'http://127.0.0.1:19332' }
+  let(:uri) { 'http://user:password@127.0.0.1:12332' }
+  let(:uri_without_authority) { 'http://127.0.0.1:12332' }
 
   let(:settings) do
     {
@@ -92,13 +92,13 @@ RSpec.describe Peatio::Muskcoin::Wallet do
     end
 
     let(:transaction) do
-      Peatio::Transaction.new(amount: 0.11, to_address: 'QRnrwkUBQ2E4ZJ3bj8jvn4Nwx4nJ2U7wXF')
+      Peatio::Transaction.new(amount: 0.11, to_address: 'TH5gqacqKQFDz8yWytSyZyEreYsyV12b3x')
     end
 
     it 'requests rpc and sends transaction without subtract fees' do
       result = wallet.create_transaction!(transaction)
       expect(result.amount).to eq(0.11)
-      expect(result.to_address).to eq('QRnrwkUBQ2E4ZJ3bj8jvn4Nwx4nJ2U7wXF')
+      expect(result.to_address).to eq('TH5gqacqKQFDz8yWytSyZyEreYsyV12b3x')
       expect(result.hash).to eq('1c5eb9dc533c369876b62f0b0bf8d69860473bb08e312316faf0ce35f2126fd7')
     end
   end

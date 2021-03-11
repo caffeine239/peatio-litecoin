@@ -1,8 +1,8 @@
 - name:             Muskcoin Deposit Wallet
-  blockchain_key:   tsla-testnet
+  blockchain_key:   tsla
   currency_id:      tsla
   # Address where deposits will be collected to.
-  address:          'Qc2BM7gp8mKgJPPxLAadLAHteNQwhFwwuf'  # IMPORTANT: Always wrap this value in quotes!
+  address:          'TH5gqacqKQFDz8yWytSyZyEreYsyV12b3x'  # IMPORTANT: Always wrap this value in quotes!
   kind:             deposit    # Wallet kind (deposit, hot, warm, cold or fee).
   nsig:             1          # Number of signatures required for performing withdraw.
   max_balance:      0.0
@@ -14,10 +14,10 @@
     uri:          http://user:password@127.0.0.1:2332
 
 - name:             Muskcoin Hot Wallet
-  blockchain_key:   tsla-testnet
+  blockchain_key:   tsla
   currency_id:      tsla
   # Address where deposits will be collected to.
-  address:          'Qc2BM7gp8mKgJPPxLAadLAHteNQwhFwwuf'  # IMPORTANT: Always wrap this value in quotes!
+  address:          'TH5gqacqKQFDz8yWytSyZyEreYsyV12b3x'  # IMPORTANT: Always wrap this value in quotes!
   kind:             hot     # Wallet kind (deposit, hot, warm, cold or fee).
   nsig:             1       # Number of signatures required for performing withdraw.
   max_balance:      5.0
@@ -29,10 +29,10 @@
     uri:          http://user:password@127.0.0.1:2332
 
 - name:             Muskcoin Warm Wallet
-  blockchain_key:   tsla-testnet
+  blockchain_key:   tsla
   currency_id:      tsla
   # Address where deposits will be collected to.
-  address:          'Tc2BM7gp8mKgJPPxLAadLAHteNQwhFwwuf'  # IMPORTANT: Always wrap this value in quotes!
+  address:          'TH5gqacqKQFDz8yWytSyZyEreYsyV12b3x'  # IMPORTANT: Always wrap this value in quotes!
   kind:             warm    # Wallet kind (deposit, hot, warm, cold or fee).
   nsig:             1       # Number of signatures required for performing withdraw.
   max_balance:      50.0

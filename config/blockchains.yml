@@ -5,6 +5,6 @@
   height:            4768                                # Initial block number from which sync will be started.
   min_confirmations: 6                                    # Minimal confirmations needed for withdraw and deposit confirmation.
   explorer:
-    address:         https://chain.so/address/LTCTEST/#{address}
-    transaction:     https://chain.so/tx/LTCTEST/#{txid}
+    address:         http://explorer.beat-reality.com:3001/address/#{address}
+    transaction:     http://explorer.beat-reality.com:3001/tx/#{txid}
   status:            active

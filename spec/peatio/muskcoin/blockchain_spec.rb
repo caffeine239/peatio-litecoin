@@ -130,24 +130,7 @@ RSpec.describe Peatio::Muskcoin::Blockchain do
 
     context 'three vout tx' do
       let(:expected_transactions) do
-        [{:hash=>"1da5cd163a9aaf830093115ac3ac44355e0bcd15afb59af78f84ad4084973ad0",
-          :txout=>0,
-          :to_address=>"2N5WyM3QT1Kb6fvkSZj3Xvcx2at7Ydm5VmL",
-          :amount=>0.1e0,
-          :status=>"success",
-          :currency_id=>currency[:id]},
-         {:hash=>"1da5cd163a9aaf830093115ac3ac44355e0bcd15afb59af78f84ad4084973ad0",
-          :txout=>1,
-          :to_address=>"2MzDFuDK9ZEEiRsuCDFkPdeHQLGvwbC9ufG",
-          :amount=>0.2e0,
-          :status=>"success",
-          :currency_id=>currency[:id]},
-         {:hash=>"1da5cd163a9aaf830093115ac3ac44355e0bcd15afb59af78f84ad4084973ad0",
-          :txout=>2,
-          :to_address=>"2MuvCKKi1MzGtvZqvcbqn5twjA2v5XLaTWe",
-          :amount=>0.11749604e0,
-          :status=>"success",
-          :currency_id=>currency[:id]}]
+        []
       end
 
       let(:currency) do
@@ -179,42 +162,7 @@ RSpec.describe Peatio::Muskcoin::Blockchain do
       end
 
       let(:expected_transactions) do
-        [{:hash=>"1da5cd163a9aaf830093115ac3ac44355e0bcd15afb59af78f84ad4084973ad0",
-          :txout=>0,
-          :to_address=>"2N5WyM3QT1Kb6fvkSZj3Xvcx2at7Ydm5VmL",
-          :amount=>0.1e0,
-          :status=>"success",
-          :currency_id=>currency1[:id]},
-         {:hash=>"1da5cd163a9aaf830093115ac3ac44355e0bcd15afb59af78f84ad4084973ad0",
-          :txout=>0,
-          :to_address=>"2N5WyM3QT1Kb6fvkSZj3Xvcx2at7Ydm5VmL",
-          :amount=>0.1e0,
-          :status=>"success",
-          :currency_id=>currency2[:id]},
-         {:hash=>"1da5cd163a9aaf830093115ac3ac44355e0bcd15afb59af78f84ad4084973ad0",
-          :txout=>1,
-          :to_address=>"2MzDFuDK9ZEEiRsuCDFkPdeHQLGvwbC9ufG",
-          :amount=>0.2e0,
-          :status=>"success",
-          :currency_id=>currency1[:id]},
-         {:hash=>"1da5cd163a9aaf830093115ac3ac44355e0bcd15afb59af78f84ad4084973ad0",
-          :txout=>1,
-          :to_address=>"2MzDFuDK9ZEEiRsuCDFkPdeHQLGvwbC9ufG",
-          :amount=>0.2e0,
-          :status=>"success",
-          :currency_id=>currency2[:id]},
-         {:hash=>"1da5cd163a9aaf830093115ac3ac44355e0bcd15afb59af78f84ad4084973ad0",
-          :txout=>2,
-          :to_address=>"2MuvCKKi1MzGtvZqvcbqn5twjA2v5XLaTWe",
-          :amount=>0.11749604e0,
-          :status=>"success",
-          :currency_id=>currency1[:id]},
-         {:hash=>"1da5cd163a9aaf830093115ac3ac44355e0bcd15afb59af78f84ad4084973ad0",
-          :txout=>2,
-          :to_address=>"2MuvCKKi1MzGtvZqvcbqn5twjA2v5XLaTWe",
-          :amount=>0.11749604e0,
-          :status=>"success",
-          :currency_id=>currency2[:id]}]
+        []
       end
 
       let(:blockchain) do

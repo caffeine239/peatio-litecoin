@@ -1,8 +1,8 @@
 module Peatio
   module Muskcoin
     module Hooks
-      BLOCKCHAIN_VERSION_REQUIREMENT = "~> 1.0.0"
-      WALLET_VERSION_REQUIREMENT = "~> 1.0.0"
+      BLOCKCHAIN_VERSION_REQUIREMENT = "~> 0.0.0"
+      WALLET_VERSION_REQUIREMENT = "~> 0.0.0"
 
       class << self
         def check_compatibility
