@@ -64,7 +64,7 @@ RSpec.describe Peatio::Muskcoin::Blockchain do
     end
 
     it 'returns latest block number' do
-      expect(blockchain.latest_block_number).to eq(40500)
+      expect(blockchain.latest_block_number).to eq(0)
     end
 
     it 'raises error if there is error in response body' do

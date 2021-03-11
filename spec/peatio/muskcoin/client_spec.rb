@@ -32,7 +32,7 @@ RSpec.describe Peatio::Muskcoin::Client do
       end
 
       it { expect{ subject.json_rpc(:getblockcount) }.not_to raise_error }
-      it { expect(subject.json_rpc(:getblockcount)).to eq(40_500) }
+      it { expect(subject.json_rpc(:getblockcount)).to eq(0) }
     end
 
     context :methodnotfound do
